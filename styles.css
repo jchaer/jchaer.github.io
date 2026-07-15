@@ -1,18 +1,18 @@
 :root {
-  color-scheme: dark;
-  --bg: #081017;
-  --bg-soft: #101924;
-  --panel: rgba(15, 22, 33, 0.86);
-  --panel-strong: #132033;
-  --line: rgba(255, 255, 255, 0.1);
-  --line-strong: rgba(141, 201, 255, 0.22);
-  --text: #edf3ff;
-  --muted: #aab7ca;
-  --accent: #8dc9ff;
-  --accent-2: #f2c96d;
-  --danger: #ff7f93;
-  --success: #85e09a;
-  --shadow: 0 24px 60px rgba(0, 0, 0, 0.36);
+  color-scheme: light;
+  --bg: #f0f8ff;
+  --bg-soft: #e4f1fb;
+  --panel: rgba(255, 255, 255, 0.84);
+  --panel-strong: #f8fcff;
+  --line: rgba(93, 135, 179, 0.16);
+  --line-strong: rgba(91, 150, 209, 0.28);
+  --text: #17324d;
+  --muted: #5f788f;
+  --accent: #5f9fd6;
+  --accent-2: #7db7e6;
+  --danger: #c85f7c;
+  --success: #3a9a74;
+  --shadow: 0 24px 60px rgba(92, 136, 177, 0.16);
   --radius: 24px;
   --max: 1160px;
 }
@@ -32,18 +32,18 @@ body {
   color: var(--text);
   font-family: Inter, "Segoe UI", Arial, sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(70, 113, 165, 0.28), transparent 28%),
-    radial-gradient(circle at top right, rgba(77, 168, 182, 0.18), transparent 26%),
-    linear-gradient(180deg, #070c12 0%, #0a1119 35%, #0f1722 100%);
+    radial-gradient(circle at top left, rgba(141, 195, 240, 0.36), transparent 30%),
+    radial-gradient(circle at top right, rgba(163, 219, 247, 0.3), transparent 26%),
+    linear-gradient(180deg, #f8fcff 0%, #eef7ff 42%, #e4f1fb 100%);
 }
 
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(95, 159, 214, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(95, 159, 214, 0.08) 1px, transparent 1px);
   background-size: 56px 56px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), transparent 65%);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.16), transparent 68%);
   pointer-events: none;
   z-index: -1;
 }
@@ -60,7 +60,7 @@ a {
   padding: 0.85rem 1rem;
   border-radius: 999px;
   background: var(--accent);
-  color: #07111a;
+  color: #f8fcff;
   font-weight: 700;
 }
 
@@ -136,7 +136,7 @@ dd {
 .menu-toggle {
   display: none;
   padding: 0.8rem 1rem;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.72);
   color: var(--text);
   border: 1px solid var(--line);
 }
@@ -147,11 +147,11 @@ dd {
   justify-content: center;
   min-height: 46px;
   padding: 0.75rem 1.1rem;
-  background: linear-gradient(135deg, var(--accent), #5fd0c8);
-  color: #051017;
+  background: linear-gradient(135deg, #dff2ff, #b9d9f3);
+  color: #17324d;
   font-weight: 700;
   text-decoration: none;
-  box-shadow: 0 12px 26px rgba(95, 208, 200, 0.2);
+  box-shadow: 0 12px 26px rgba(95, 159, 214, 0.18);
 }
 
 .button:hover,
@@ -166,7 +166,7 @@ dd {
 }
 
 .button-ghost {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.78);
   color: var(--text);
   border: 1px solid var(--line);
   box-shadow: none;
@@ -184,7 +184,7 @@ dd {
   padding: 0.72rem 0.95rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.72);
 }
 
 .hero,
@@ -193,7 +193,7 @@ dd {
   padding: clamp(1.2rem, 3vw, 1.6rem);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: linear-gradient(180deg, rgba(16, 25, 36, 0.92), rgba(12, 18, 28, 0.9));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(244, 250, 255, 0.96));
   box-shadow: var(--shadow);
 }
 
@@ -233,8 +233,8 @@ dd {
 .hero-card {
   padding: 1.2rem;
   border-radius: 20px;
-  background: linear-gradient(180deg, rgba(141, 201, 255, 0.12), rgba(255, 255, 255, 0.03));
-  border: 1px solid rgba(141, 201, 255, 0.18);
+  background: linear-gradient(180deg, rgba(223, 242, 255, 0.9), rgba(255, 255, 255, 0.9));
+  border: 1px solid rgba(125, 183, 230, 0.22);
 }
 
 .hero-card dl {
@@ -267,7 +267,7 @@ dd {
   padding: 1rem;
   border-radius: 18px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.86);
 }
 
 .info-card p,
@@ -295,7 +295,7 @@ dd {
   padding: 0.65rem 0.9rem;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.86);
 }
 
 .section-note {
@@ -322,7 +322,7 @@ dd {
 .game-panel {
   border-radius: 20px;
   border: 1px solid var(--line);
-  background: rgba(9, 14, 21, 0.7);
+  background: rgba(255, 255, 255, 0.84);
   padding: 1rem;
 }
 
@@ -336,8 +336,8 @@ dd {
 .game-topbar > div {
   padding: 0.85rem 0.9rem;
   border-radius: 16px;
-  border: 1px solid rgba(141, 201, 255, 0.16);
-  background: linear-gradient(180deg, rgba(141, 201, 255, 0.08), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(125, 183, 230, 0.2);
+  background: linear-gradient(180deg, rgba(223, 242, 255, 0.95), rgba(255, 255, 255, 0.9));
 }
 
 .game-topbar strong {
@@ -357,10 +357,10 @@ dd {
   aspect-ratio: 1 / 1;
   display: block;
   border-radius: 20px;
-  border: 1px solid rgba(141, 201, 255, 0.18);
+  border: 1px solid rgba(125, 183, 230, 0.22);
   background:
-    radial-gradient(circle at 20% 20%, rgba(141, 201, 255, 0.12), transparent 24%),
-    linear-gradient(180deg, #07111a 0%, #0b1521 100%);
+    radial-gradient(circle at 20% 20%, rgba(141, 201, 255, 0.16), transparent 24%),
+    linear-gradient(180deg, #f9fdff 0%, #e9f4ff 100%);
 }
 
 .game-help {
@@ -390,7 +390,7 @@ dd {
   min-width: 54px;
   min-height: 54px;
   padding: 0.8rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.9);
   color: var(--text);
   border: 1px solid var(--line);
   box-shadow: none;
